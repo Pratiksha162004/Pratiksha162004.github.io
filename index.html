@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratiksha Mahanawar | Portfolio</title>
+    <style>
+         :root {
+            --primary: #5e60ce;
+            --secondary: #5390d9;
+            --bg: #f9fafc;
+            --text: #1a202c;
+            --muted: #4a5568;
+            --card: #ffffff;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Poppins", system-ui, sans-serif;
+            background: linear-gradient(120deg, #fdfbfb, #ebedee);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 1px;
+        }
+        
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--muted);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        .hero {
+            padding: 80px 40px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .hero p {
+            color: var(--muted);
+            margin-bottom: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: #fff;
+        }
+        
+        .btn-primary:hover {
+            background: var(--secondary);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+        
+        section {
+            padding: 60px 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        h2 {
+            color: var(--primary);
+            font-size: 26px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: var(--card);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Pratiksha Mahanawar</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+        <h1>Hi, I'm Pratiksha 👋</h1>
+        <p>I'm a Final-year B.Tech Computer Science student passionate about building user-friendly web apps and exploring new technologies. Skilled in Java, Python, HTML/CSS, and software testing.</p>
+
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="Pratiksha_Mahanawar_CSEB_YTC_2026.pdf" class="btn btn-outline" download>📄 Download Resume</a>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Web Development Project</h3>
+                <p>Responsive website using HTML, CSS, Bootstrap, and Java connectivity for backend.</p>
+            </div>
+            <div class="card">
+                <h3>Room Occupancy Counter</h3>
+                <p>Streamlit + ML-based model predicting room occupancy using sensor data. Real-time prototype with Python backend.</p>
+            </div>
+            <div class="card">
+                <h3>AI Resume Ranking System</h3>
+                <p>NLP-powered analyzer ranking resumes by keyword relevance and scoring algorithms. Built with Python and NLP libraries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Education</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <p>HTML, CSS, JavaScript, Bootstrap, Java, Python, Selenium, ML, NLP</p>
+            </div>
+            <div class="card">
+                <h3>Education</h3>
+                <p><strong>B.Tech in Computer Science (2022–2026)</strong><br>Yashoda Technical Campus, Satara — CGPA: 6.34</p>
+                <p><strong>H.S.C:</strong> 57.33% (2022)<br><strong>S.S.C:</strong> 76.80% (2020)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="grid">
+            <div class="card">
+                <p><strong>Email:</strong> mahanawarpratiksha@gmail.com</p>
+                <p><strong>Phone:</strong> +91 70206 99925</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Pratiksha162004" target="_blank">Pratiksha162004</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pratiksha-mahanawar-90a986292" target="_blank">pratiksha-mahanawar</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Pratiksha Mahanawar — Designed with simplicity 🌿</p>
+    </footer>
+
+</body>
+
+</html>
